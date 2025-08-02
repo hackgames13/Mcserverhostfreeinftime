@@ -1,3 +1,5 @@
+const keep_alive = require('./keep_alive.js');
+
 async function loopRequests() {
   while (true) {
     try {
