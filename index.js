@@ -1,5 +1,5 @@
 const keep_alive = require('./keep_alive.js');
-
+console.log("keep_alive");
 async function loopRequests() {
   while (true) {
     try {
@@ -25,6 +25,7 @@ async function loopRequests() {
 
     // Delay between 10 and 15 minutes
     const delay = (10 + Math.random() * 5) * 60 * 1000;
+    console.log("set 1h");
     await new Promise(resolve => setTimeout(resolve, delay));
   }
 }
